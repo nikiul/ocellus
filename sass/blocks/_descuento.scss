@@ -1,0 +1,310 @@
+.descuento {
+    position: relative;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    background: radial-gradient(42.56% 184.73% at 50% 50%, #64B1E6 0%, #4D97C9 100%);
+
+    &::before {
+        content: url('../img/descuento/descuento-bg.png');
+        position: absolute;
+        left: 30%;
+        bottom: -3px;
+    }
+}
+
+.descuento__content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.descuento__info {
+
+}
+
+.descuento__title {
+    font-family: 'Muller',sans-serif;
+    font-weight: normal;
+    font-size: 30.3797px;
+    line-height: 153.02%;
+    color: #ADD1EA;
+
+    span {
+        font-family: 'Rubik',sans-serif;
+        font-weight: 500;
+        font-size: 30.3797px;
+        line-height: 153.02%;
+        color: #FFFFFF;
+    }
+}
+
+.descuento__info-img {
+
+}
+
+.descuento__info-cost {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.info-cost--first {
+    margin-right: 25px;
+    font-family: 'TT Norms',sans-serif;
+    font-weight: bold;
+    font-size: 33.5277px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+
+    span {
+        font-size: 12.2935px;
+        line-height: 15px;
+    }
+}
+
+.info-cost--sec {
+    font-family: 'TT Norms',sans-serif;
+    font-weight: bold;
+    font-size: 33.5277px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration-line: line-through;
+    opacity: 0.38;
+
+    span {
+        font-size: 12.2935px;
+        line-height: 15px;
+        text-decoration-line: line-through;
+    }
+}
+
+.discuento__form-wrap {
+    padding: 50px 53px;
+    width: 506px;
+    background: rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(28px);
+    border-radius: 30px;
+}
+
+.descuento__form {
+    position: relative;
+    z-index: 2;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 52px;
+    margin-bottom: 13px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    box-sizing: border-box;
+    border-radius: 10px;
+    outline: none;
+    z-index: 2;        
+    color: #fff;
+
+    &::placeholder {
+        font-family: 'Muller',sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 153.02%;
+        color: #FFFFFF;
+        opacity: 0.64;
+    }
+
+    &::-webkit-input-placeholder {
+        font-family: 'Muller',sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 153.02%;
+        color: #FFFFFF;
+        opacity: 0.64;
+    } 
+
+    &::-moz-placeholder {
+        font-family: 'Muller',sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 153.02%;
+        color: #FFFFFF;
+        opacity: 0.64;
+    }
+
+    &:focus {
+        border-color: #fff;
+    }
+}
+
+.form__input-name {
+    background-image: url('../img/descuento/descuento-form-icon1.svg'); 
+    background-repeat: no-repeat;
+    background-position: 17px;
+}
+
+.form__input-number {
+    background-image: url('../img/descuento/descuento-form-icon2.svg'); 
+    background-repeat: no-repeat;
+    background-position: 17px;
+}
+
+.descuento__form .btn{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/btn/btn-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+}
+
+
+
+
+.size__title {
+    display: none;
+
+    @media (max-width: 801px) {
+        margin: 0;
+        margin-bottom: 20px;
+        display: block;
+        font-size: 14px;
+        line-height: 70%;
+        letter-spacing: 0.05em;
+        color: rgba(49, 49, 49, 0.6);
+    }
+
+    @media (max-width: 375px) {
+        margin-bottom: 0;
+    }
+}
+
+.sizes__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: 801px) {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 375px) {
+        display: none;
+    }
+}
+
+.form__city {
+    margin-bottom: 13px;
+    display: block;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+    position: relative;
+    background-image: url('../img/descuento/descuento-city-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 18px;
+    background-position: 17px;
+    cursor: pointer;
+
+    &:focus {
+        border: 1px solid rgb(255, 255, 255);
+    }
+}
+.city__current {
+    padding-left: 52px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+.city-icon {
+    width: 16px;
+    height: 18px;
+}
+.city-current__elem {
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+    font-family: 'Muller',sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100.02%;
+    color: #FFFFFF;
+}
+.city-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 40%;
+    right: 17px;
+    transform: translate(-50%, -20%);
+}
+.city__list {
+    margin-top: 3px;
+    display: none;
+    z-index: 4;
+    position: absolute;
+    background-color: #85bee3;
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.city__elem {
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Muller',sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 100.02%;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: rgba(183, 214, 235, 0.644);
+
+    }
+
+    &:last-child {
+        border-bottom: 0;
+    }
+}
+
+// .sizes__item {
+//     list-style-type: none;
+//     padding: 5px;
+//     margin: 0;
+//     margin-right: 20px;
+//     font-size: 16px;
+//     line-height: 70%;
+//     letter-spacing: 0.05em;
+//     color: rgba(49, 49, 49, 0.6);
+//     text-decoration: none;
+//     cursor: pointer;
+
+//     &:last-child {
+//         margin-right: 0;
+//     }
+// }
+
+// .sizes__item--active {
+//     color: #313131;
+// }

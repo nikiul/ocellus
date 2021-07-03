@@ -1,0 +1,152 @@
+.reviews {
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 158px;
+    background-image: url('../img/reviews/reviews-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        position: absolute;
+        content:url('../img/reviews/reviews-left-img.png');
+        left: 0;
+        bottom: -4px;
+
+        @media (max-width: 610px) {
+            content: '';
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content:url('../img/reviews/reviews-right-img.png');
+        right: 0;
+        top: 0;
+
+        @media (max-width: 610px) {
+            content: '';
+        }
+    }
+}
+
+.reviews__content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 1020px) {
+        flex-direction: column;
+    }
+}
+
+.reviews__title {
+    margin-top: 123px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125.02%;
+    color: #FFFFFF;
+
+    span {
+        color: #CA2E70;
+    }
+
+    @media (max-width: 1020px) {
+        position: static;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 35px;
+        z-index: 1;
+    }
+}
+
+.reviews__content .owl-carousel .owl-item img {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+}
+
+.reviews__content .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    background-image: url('../img/reviews/arrow-next-desctop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 115px;
+    top: 39%;
+    right: 25%;
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    outline: none;
+
+    span {
+        display: none;
+    }
+
+    @media (max-width: 1100px) {
+        right: 180px;
+    }
+
+    @media (max-width: 930px){
+        right: 100px;
+    }
+
+    @media (max-width: 750px){
+        right: 30px;
+    }
+
+    @media (max-width: 610px){
+        right: 10px;
+        background-image: url('../img/reviews/arrow-next-mobile.png');
+        background-size: 57px;
+        width: 60px;
+        height: 60px;
+        top: 20%;
+    }
+
+}
+
+.reviews__content .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    background-image: url('../img/reviews/arrow-prev-desctop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 87px;
+    top: 41%;
+    left: 26%;
+    width: 87px;
+    height: 87px;
+    border-radius: 100%;
+    outline: none;
+
+    span {
+        display: none;
+    }
+
+    @media (max-width: 1100px) {
+        left: 190px;
+    }
+
+    @media (max-width: 930px){
+        left: 120px;
+    }
+
+    @media (max-width: 750px){
+        left: 50px;
+    }
+
+    @media (max-width: 610px){
+        left: 10px;
+        background-image: url('../img/reviews/arrow-prev-mobile.png');
+        background-size: 57px;        
+        width: 60px;
+        height: 60px;
+        top: 20%;
+    }
+}

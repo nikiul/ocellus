@@ -1,0 +1,166 @@
+.musculos {
+    position: relative;
+    padding-top: 69px;
+    padding-bottom: 45px;
+    background-image: url('../img/musculos/musculos-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: url('../img/musculos/musculos-left-bg.png');
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+
+        @media (max-width: 785px) {
+            content: '';
+        }
+    }
+
+    &::after {
+        content: url('../img/musculos/musculos-right-bg.png');
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+
+        @media (max-width: 785px) {
+            content: '';
+        }
+    }
+
+    @media (max-width: 540px) {
+        padding-top: 45px;
+        padding-bottom: 0;
+        background: #fff;
+    }
+}
+
+.musculos__content {
+    position: relative;
+    margin-left: auto;
+    width: 750px;
+    padding: 66px 54px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 0px 0px 0px 100px;
+
+    @media (max-width: 850px) {
+        margin-right: auto;
+        width: 100%;
+    }
+
+    @media (max-width: 680px) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    @media (max-width: 540px) {
+        padding: 0;
+    }
+}
+
+.musculos__title {
+    margin-bottom: 40px;
+    font-family: 'TT Norms', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 141.02%;
+    color: #000000;
+
+    span {
+        font-family: 'TT Norms', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 31.9885px;
+        line-height: 141.02%;
+        color: #529CCF;
+
+        &:first-child {
+            color: #529CCF;
+        }
+
+        &:last-child {
+            color: #000000;
+        }
+
+        @media (max-width: 540px) {
+            font-size: 28px;
+        }
+    }
+}
+
+.musculos__list {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    list-style-type: none;
+
+    @media (max-width: 540px) {
+        margin-bottom: 45px;
+    }
+}
+
+.musculos__list-item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: baseline;
+
+    @media (max-width: 540px) {
+        margin-bottom: 15px;
+    }
+
+    &:last-child {
+        @media (max-width: 540px) {
+            margin-bottom: 0;
+        }
+    }
+
+    img {
+        position: relative;
+        top: 13px;
+        margin-right: 28px;
+
+        @media (max-width: 540px) {
+            margin-right: 20px;
+        }
+    }
+
+    span {
+        font-family: 'Muller', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160.52%;
+        color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.musculos__img-wrap {
+    margin-left: 55px;
+    z-index: 2;
+
+    @media (max-width: 540px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 360px) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.musculos__bottom-img {
+    display: none;
+
+    @media (max-width: 540px) {
+        display: block;
+        width: 100%;
+    }
+}

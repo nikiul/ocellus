@@ -1,0 +1,128 @@
+.footer {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background: #2D2A2A;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__wrap {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__contacts,
+.footer__about,
+.footer__delivery {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__list,
+.about__list,
+.delivery__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.footer__contacts {
+    width: 40%;
+}
+
+.footer__title {
+    margin-bottom: 21px;
+    font-family: Muller;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 160.52%;
+    color: #FFFFFF;
+}
+
+.contacts__item {
+    display: flex;
+    margin-bottom: 1em;
+
+    img {
+        margin-right: 15px;
+    }
+
+    a {
+        font-family: 'Muller';
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 160.52%;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+    }   
+
+    p {
+        font-family: 'Muller';
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 160.52%;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.footer__about {
+    width: 20%;
+}
+
+.about__item {
+    display: flex;
+    margin-bottom: 1em;
+
+    a {
+        font-family: 'Muller';
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 160.52%;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+    } 
+}
+
+.footer__delivery {
+    width: 20%;
+}
+
+.delivery__list {
+    margin-bottom: 2em;
+}
+
+.delivery__item {
+    display: flex;
+    margin-bottom: 1em;
+
+    a {
+        font-family: 'Muller';
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 160.52%;
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+    } 
+}
+
+.paymants {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    font-family: 'Muller',sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 160.52%;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}

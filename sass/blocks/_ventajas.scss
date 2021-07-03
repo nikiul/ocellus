@@ -1,0 +1,169 @@
+.ventajas {
+    position: relative;
+    padding-top: 105px;
+    padding-bottom: 180px;
+    background-image: url('../img/ventajas/ventajas-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 1550px) {
+        padding-bottom: 96px;
+    }
+
+    @media (max-width: 540px) {
+        padding-top: 50px;
+        background: radial-gradient(42.56% 184.73% at 50% 50%, #64B1E6 0%, #4D97C9 100%);
+    }
+}
+
+.ventajas__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventajas__title {
+    margin-bottom: 2px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 125.02%;
+    text-align: center;
+    color: #FFFFFF;
+
+    @media (max-width: 540px) {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+}
+
+.ventajas__subtitle1 {
+    font-family: 'Rubik',sans-serif;
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 125.02%;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 5.33333px 40px rgba(0, 0, 0, 0.13);
+
+    @media (max-width: 540px) {
+        margin-bottom: 17px;
+        font-size: 28px;
+    }
+}
+
+.ventajas__subtitle2 {
+    margin-bottom: 50px;
+    font-family: 'Muller', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 138.52%;
+    text-align: center;
+    color: #FFFFFF;
+
+    @media (max-width: 540px) {
+        margin-bottom: 29px;
+        font-size: 18px;
+    }
+}
+
+.ventajas__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+.ventajas__list-item {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        font-family: 'Muller', sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 138.52%;
+        color: #FFFFFF;
+
+
+        span {
+            margin: 0;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 138.52%;
+            color: #EBE3FF;
+            background-color: transparent;
+            text-shadow: none;
+        }
+
+        br {
+            @media (max-width: 540px) {
+                // display: none;
+            }
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.vetajas__item-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    margin-right: 23px;
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 50%;
+    font-family: 'Muller',sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-shadow: -1px 0px 2px rgba(0, 0, 0, 0.19);
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: url('../img/ventajas/ventajas-circle.svg');
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.ventajas__img {
+    position: absolute;
+    bottom: 10px;
+    right: 23%;
+    z-index: 1;
+
+    @media (max-width: 1550px) {
+        margin-top: 35px;
+        position: relative;
+        right: auto;
+        bottom: auto;
+    }
+
+    @media (max-width: 540px) {
+        display: none;
+    }
+}
+
+.ventajas__img--mobile {
+    display: none;
+
+    @media (max-width: 540px) {
+        display: block;
+        margin-top: 45px;
+    }
+}   

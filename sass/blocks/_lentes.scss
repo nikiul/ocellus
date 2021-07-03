@@ -1,0 +1,94 @@
+.lentes {
+    position: relative;
+    padding-top: 189px;
+    padding-bottom: 260px;
+    background-image: url('../img/lentes/lentes-bg.png');
+    background-repeat: no-repeat;
+    background-position: 85%;
+
+    &::before {
+        content: url('../img/lentes/lentes-before.png');
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+
+        @media (max-width: 540px) {
+            content: '';
+        }
+    }
+
+    .container {
+        @media (max-width: 540px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: 540px) {
+        padding-top: 40px;
+        padding-bottom: 0;
+        background-image: none;
+    }
+}
+
+.lentes__content {
+    position: relative;
+    width: 470px;
+    z-index: 2;
+
+    @media (max-width: 540px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.lentes__title {
+    margin-bottom: 14px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 125.02%;
+    color: #010101;
+
+    @media (max-width: 540px) {
+        margin-top: 31px;
+    }
+}
+
+.lentes__subtitle {
+    margin-bottom: 32px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 125.02%;
+    color: #EA0000;
+
+    @media (max-width: 540px) {
+        margin-top: 31px;
+    }
+}
+
+.lentes__desc {
+    font-family: 'Muller',sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 160.52%;
+    color: #010101;
+
+    @media (max-width: 540px) {
+        margin-bottom: 28px;
+    }
+}
+
+.lentes__bottom-img {
+    display: none;
+
+    @media (max-width: 540px) {
+        display: block;
+        width: 100%;
+    }
+}

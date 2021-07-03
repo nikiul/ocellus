@@ -1,0 +1,244 @@
+.estudios {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 76px;
+    background-image: url('../img/estudios/estudios-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+        content: url('../img/estudios/estudios-before.png');
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+
+        @media (max-width: 1020px) {
+            content: '';
+        }
+    }
+
+    @media (max-width: 540px) {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+}
+
+.estudios__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
+}
+
+.estudios__left {
+    margin-top: 40px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1200px) {
+        margin-top: 0;
+    }
+
+    @media (max-width: 700px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.estudios__title {
+    margin-bottom: 20px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    font-size: 45.8235px;
+    line-height: 125.02%;
+    color: #010101;
+
+    @media (max-width: 540px) {
+        font-size: 24px;
+        margin-bottom: 27px;
+    }
+
+    br {
+        @media (max-width: 540px) {
+            display: none;
+        }
+    }
+}
+
+.etudios__subtitle {
+    margin-bottom: 22px;
+    font-family: 'Muller',sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160.52%;
+    color: rgba(1, 1, 1, 0.75);
+
+    @media (max-width: 540px) {
+        margin-bottom: 15px;
+    }
+}
+
+.estudios__personas {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    span {
+        font-family: 'Rubik',sans-serif;
+
+        &:first-child {
+            font-weight: bold;
+            font-size: 86px;
+            line-height: 100%;
+            color: #CA2E70;
+        }
+
+        &:last-child {
+            font-weight: normal;
+            font-size: 23px;
+            line-height: 100%;
+            color: #767575;
+        }
+    }
+
+    @media (max-width: 540px) {
+        margin-bottom: 25px;
+    }
+}
+
+.estudios__desc {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 20px;
+    }
+
+    p {
+        font-family: 'Muller',sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 160.52%;
+        color: #010101;
+        
+        @media (max-width: 700px) {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.estudios__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    z-index: 2;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
+}
+
+.estudios__graph-desc {
+    width: 90%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.graph-desc__item {
+    margin-bottom: 22px;
+    width: 48%;
+    display: flex;
+    flex-direction: row;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-family: 'Muller',sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        color: #343A40;
+
+        br {
+            @media (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.grapg-desc__color {
+    margin-right: 55px;
+}
+
+.grapg-desc__color--pink {
+    position: relative;
+    &::before {
+        content:url('../img/estudios/estudios-pink.png');
+        position: absolute;
+    }
+}
+
+.grapg-desc__color--lightgreen {
+    position: relative;
+
+    &::before {
+        content:url('../img/estudios/estudios-lightgreen.png');
+        position: absolute;
+    }
+}
+
+.grapg-desc__color--orange {
+    position: relative;
+
+    &::before {
+        content:url('../img/estudios/estudios-orange.png');
+        position: absolute;
+    }
+}
+
+.grapg-desc__color--green {
+    position: relative;
+
+    &::before {
+        content:url('../img/estudios/estudios-green.png');
+        position: absolute;
+    }
+}
+
+.grapg-desc__color--blue {
+    position: relative;
+
+    &::before {
+        content:url('../img/estudios/estudios-blue.png');
+        position: absolute;
+    }
+}

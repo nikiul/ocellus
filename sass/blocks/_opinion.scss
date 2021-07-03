@@ -1,0 +1,106 @@
+.opinion {
+    position: relative;
+    padding-top: 104px;
+    padding-bottom: 117px;
+    background: radial-gradient(42.38% 42.38% at 45.44% 35.16%, #2E2B2B 0%, #000000 100%);
+
+    &::before {
+        content: url('../img/opinion/opinion-man.png');
+        position: absolute;
+        bottom: -3px;
+        left: 100px;
+        width: 30%;
+
+        @media (max-width: 1400px) {
+            content: '';
+        }
+    }
+
+    @media (max-width: 1400px) {
+        padding-bottom: 0;
+    }
+
+    @media (max-width: 640px) {
+        padding-top: 55px;
+        background: #000;
+    }
+}
+
+.opinion__content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    width: 800px;
+    z-index: 1;
+
+    @media (max-width: 1400px) {
+        width: 100%;
+    }
+}
+
+.opinion__title {
+    margin-bottom: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 125.02%;
+    color: #FFFFFF;
+
+    span {
+        color: #CA2E70;
+    }
+
+    @media (max-width: 640px) {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 37px;
+    }
+}
+
+.opinion__desc {
+    margin-bottom: 15px;
+    font-family: 'Muller', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 160.52%;
+    color: rgba(255, 255, 255, 0.7);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 640px) {
+        font-size: 15px;
+    }
+}
+
+.opinion__painting {
+    margin-top: 30px;
+    position: relative;
+    margin-left: auto;
+
+    @media (max-width: 1400px) {
+        display: none;
+    }
+}   
+
+.opinion__bottom {
+    display: none;
+
+    @media (max-width: 1400px) {
+        display: block;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 540px) {
+        width: 100%;
+    }
+}
