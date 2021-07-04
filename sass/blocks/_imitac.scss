@@ -101,6 +101,15 @@
     }
 
     @media (max-width: 570px) {
+        display: none;
+    }
+}
+
+.imitac__bg2 {
+    display: none;
+
+    @media (max-width: 570px) {
+        display: block;
         width: 100%;
     }
 }
