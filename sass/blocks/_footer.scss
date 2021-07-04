@@ -2,6 +2,11 @@
     padding-top: 65px;
     padding-bottom: 65px;
     background: #2D2A2A;
+
+    @media (max-width: 540px) {
+        padding-top: 41px;
+        padding-bottom: 78px;
+    }
 }
 
 .footer__content {
@@ -14,6 +19,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    @media (max-width: 785px) {
+        flex-direction: column;
+    }
 }
 
 .footer__contacts,
@@ -35,11 +44,15 @@
 
 .footer__contacts {
     width: 40%;
+
+    @media (max-width: 785px) {
+        width: 100%;
+    }
 }
 
 .footer__title {
     margin-bottom: 21px;
-    font-family: Muller;
+    font-family: 'Muller',sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 160.52%;
@@ -74,6 +87,10 @@
 
 .footer__about {
     width: 20%;
+
+    @media (max-width: 785px) {
+        width: 100%;
+    }
 }
 
 .about__item {
@@ -92,6 +109,10 @@
 
 .footer__delivery {
     width: 20%;
+
+    @media (max-width: 785px) {
+        width: 100%;
+    }
 }
 
 .delivery__list {
@@ -116,6 +137,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    img {
+        @media (max-width: 785px) {
+            margin-right: 40px;
+
+            &:last-child {margin-right: 0;}
+        }
+    }
+
+    @media (max-width: 785px) {
+        justify-content: center;
+    }
 }
 
 .footer__copyright {
